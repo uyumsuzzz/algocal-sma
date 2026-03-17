@@ -1,7 +1,4 @@
 //girilen stringi ters yazdırma
-/*
-gets \n -> \0  strlen 
-*/
 #include <string.h>
 #include <stdio.h>
 int main ()
