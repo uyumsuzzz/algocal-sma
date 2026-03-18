@@ -1,0 +1,22 @@
+ 
+        *p1 --> pointer bu 0. indexin adresini tutuyor. (b harfi)
+        b       e    ...               '\0'  
+        -       -       -       -       -
+        0.indx  1.indx  2.indx  3.indx  (stringin bittiği nokta)
+
+        while(*p1 != '\0') {
+        p1++;
+    }
+    
+    -->  p1 '\0' ı görene kadar adresini arttırır o noktaya gelir
+    (p1 = p1 + 1) --> (p1 adresi + 1 x (1byte))
+    Kutuların boyutu veri tipine göre değişir; char dizilerinde 1 kutu 1 byte, int dizilerinde 1 kutu 4 byte'tır
+    // int ile dizi tutsaydık p1++ dersek her bir kutu için 4 byte ilerlerdi
+
+
+    while ((*p1++ = *p2++));
+
+    --> p2 nin adresindeki karakteri p1 in adresinin içine kopyalar (*p1 diyerek adres içindeki değeri kastederiz)
+        kopyalama bitince iki adres de diğer kutucuğa geçer
+        while '\0' (0 - false) döndürene kadar devam eder
+
