@@ -23,7 +23,7 @@ int main ()
     eslesti = 1;  // VARSAYIM    
         for (int j=0; j<uzunluk1; j++) // 
         {
-            if(str2[i+j]!=str1[j])
+            if(str2[i+j]!=str1[j])  // 
             {
                 eslesti = 0;
                 break;

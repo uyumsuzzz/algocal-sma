@@ -8,7 +8,8 @@ int main ()
         fgets(str, sizeof(str), stdin);
     str[strcspn(str, "\n")] = '\0';
     int uzunluk = strlen(str);
-        printf("ters hali: ");
+    printf("ters hali: ");
+            
             for (int i=uzunluk-1; i>=0; i--) // dış döngü tüm indexi sondan başlayıp sırayla tarar
             {
                 if(str[i]==' '||i==0) // boşluğa denk geldiyse veya stringin başına geldi ise  
