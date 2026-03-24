@@ -1,4 +1,4 @@
-// girilen stringteki kelimeleri tersten sırayla yazdırma
+// girilen stringteki kelimeleri tersten sırayla yazdırma /(bi tık zor atlayabilirsin şimdilik)
 #include <string.h>
 #include <stdio.h>
 int main ()
