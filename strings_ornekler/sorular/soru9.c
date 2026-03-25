@@ -18,6 +18,11 @@ int main ()
             flag = 1;
             break;
         }
+
+        if(dizi1[i] == '\0' && dizi2[i] == '\0')  // aynı anda biterlerse
+        {
+            break; // flag 0 kalmaya devam eder, döngü biter
+        }
     }
     
     if(flag==0)
