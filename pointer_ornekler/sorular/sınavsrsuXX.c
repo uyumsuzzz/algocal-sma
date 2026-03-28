@@ -1,3 +1,4 @@
+// Pointer kullanarak ve dinamik olarak girilen bir stringi ters çeviren programı yazınız.
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

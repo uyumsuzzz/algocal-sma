@@ -15,7 +15,7 @@ int main ()
         scanf("%d", &n);
     
     int *ptr;
-    ptr = (int*) malloc(n*n*sizeof(int));
+    ptr = (int*) malloc(n*n*sizeof(int));  // 2 boyutlu dizi almak için n*n
 
     if(ptr==NULL)
     {
@@ -29,8 +29,7 @@ int main ()
     {
         for(int j=0; j<n; j++)
         {
-            scanf("%d", (ptr+i*n+j));
-
+            scanf("%d", (ptr+i*n+j));   //i. satır x matrisin (nxn) -> n  + j. sütun 
         }
     }
 
@@ -45,6 +44,7 @@ int main ()
 
     printf("%d ", top);
 
+free(ptr);
 
 return 0;
 }

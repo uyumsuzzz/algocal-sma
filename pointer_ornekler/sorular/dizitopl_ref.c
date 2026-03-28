@@ -7,7 +7,7 @@ void dizi_topla(int *dizi, int boyut, int *toplam) // kullanacağımız dizi, on
     *toplam = 0;
         for(int i=0; i<boyut; i++)
         {
-            *toplam += dizi[i];
+            *toplam += *(dizi+i);
         }
 }
 int main ()
