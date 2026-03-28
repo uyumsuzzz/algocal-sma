@@ -20,9 +20,9 @@ int main ()
         ptr = (int*) realloc(ptr, (uzunluk+1)*sizeof(int));
     }
 
-    for(int i=0; i<uzunluk-1; i++)
+    for(int i=0; i<uzunluk-1; i++)   // *(ptr+j+1) kullandığımzda alan dışına çıkmasın diye uzunluk-1 den başlatılır
     {
-        for(int j=0; j<uzunluk-i-1; j++)
+        for(int j=0; j<uzunluk-i-1; j++)   // -i nedeni biriktirdiğimiz sağdaki elemanları yine karşılaştırmaya gerek yok
         {
             if(*(ptr+j)>*(ptr+j+1))
             {
