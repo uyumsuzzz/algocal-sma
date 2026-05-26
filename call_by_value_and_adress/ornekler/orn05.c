@@ -1,4 +1,4 @@
-// fonk ile faktöriyel bulma
+// fonk ile faktöriyel bulma  *recursive
 #include <stdio.h>
 int fnc(int n)
 {
