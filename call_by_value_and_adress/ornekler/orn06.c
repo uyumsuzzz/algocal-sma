@@ -6,13 +6,13 @@ int bul(char *metin, char *istenilen)
 {
     int bulundu = 0;
 
-    for(int j=0; *(metin+j)!='\0'; j++)
+    for(int j=0; *(metin+j)!='\0'; j++)  // metinin başladığı yerden itibaren bir arttır
     {
     int eslesti = 1; // varsayım        
             
-            for (int i=0; *(istenilen + i)!='\0'; i++)
+            for (int i=0; *(istenilen + i)!='\0'; i++)  // istediğimiz metnin başlangıcından bir arttırarak git
         {       
-            if(*(metin + j + i) == '\0' || *(istenilen + i) != *(metin + j + i))
+            if(*(metin + j + i) == '\0' || *(istenilen + i) != *(metin + j + i))   // metin bittiyse veya uyuşmuyorsa dur
             {
                 eslesti = 0;
                 break;
