@@ -14,7 +14,7 @@ int main ()
     scanf("%d", &n);
     
     
-    p = fopen("dosya.txt", "w");
+    p = fopen("dosya.txt", "a");
     if(p == NULL)
     {
         printf("ERROR");
@@ -30,7 +30,7 @@ int main ()
         printf("%d. ogrenci not gir..", i+1);
         scanf("%d", &not);
 
-        fprintf(p, "\n%d. ogrenci isim=%s, not=%d\n", i+1, isim, not);
+        fprintf(p, "%d. ogrenci isim=%s, not=%d\n", i+1, isim, not);
     }
 
     fclose(p);

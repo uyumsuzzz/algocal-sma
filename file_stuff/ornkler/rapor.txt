@@ -1,0 +1,1 @@
+bulunan rakam sayisi = 4
