@@ -1,7 +1,7 @@
 //Kullanıcı tarafından girilen bir sayının Abundant sayı olup olmadığını döndüren 
 //fonksiyonu  yazınız.
 #include <stdio.h>
-int abudant(int *sayi, int *sonuc)
+void abudant(int *sayi, int *sonuc)
 {
     int top = 0;
 

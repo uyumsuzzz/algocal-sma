@@ -1,8 +1,0 @@
-1. ogrenci
-isim:sevil
-not:100
-
-2. ogrenci
-isim:zeytin
-not:1115
-
